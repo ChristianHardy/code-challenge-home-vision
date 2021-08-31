@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node . -r"
+    "clean-images": "rm -rf ./images/*",
+    "start": "npm run clean-images && ts-node . -r"
   },
   "keywords": [],
   "author": "Hardy",
