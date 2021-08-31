@@ -1,17 +1,18 @@
 /*------------------------------------------------------------------------
  * Types for Hose attributes
  -----------------------------------------------------------------------*/
-export interface House {
+export type House = {
 	id: number;
 	address: string;
 	homeowner: string;
 	price: number;
 	photoURL: string;
-}
+};
 
 /*------------------------------------------------------------------------
- * Types for House List
+ * Types for Hose list external API response
  -----------------------------------------------------------------------*/
-export interface HouseList {
+export type HouseAPIResponse = {
 	houses: House[];
-}
+	ok: boolean;
+};

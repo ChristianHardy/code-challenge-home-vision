@@ -1,5 +1,4 @@
-function sum(a:number, b: number): number {
-	return a + b;
-}
+import { getHouseList } from "./server/houses/list";
 
-console.log(sum(2, 5));
+// Execute the house list function
+getHouseList().catch(error => console.log(error));
